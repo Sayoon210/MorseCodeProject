@@ -1,10 +1,6 @@
 using System.IO;
 using UnityEngine;
 
-
-// 다른 스크립트에서 jumpKey 사용 예시
-// KeyCode jumpKey = KeyManager.jumpKey;
-
 public class KeyManager : MonoBehaviour
 {
     public static KeyCode dotKey;
@@ -17,31 +13,30 @@ public class KeyManager : MonoBehaviour
 
     void LoadKeys()
     {
-        string path = Application.dataPath + "/keys.txt";
+        string path = "Assets/Script/keys.json";
         if (File.Exists(path))
         {
-            string[] lines = File.ReadAllLines(path);
-            foreach (string line in lines)
-            {
-                string[] keyValue = line.Split('=');
-                string keyName = keyValue[0].Trim();
-                string keyCode = keyValue[1].Trim();
-                
-                switch (keyName)
-                {
-                    case "dot":
-                        dotKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keyCode);
-                        break;
-                    case "dash":
-                        dashKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keyCode);
-                        break;
-                    // Handle other keys as needed
-                }
-            }
+            string jsonString = File.ReadAllText(path);
+
+            // Deserialize JSON using JsonUtility
+            Keys keys = JsonUtility.FromJson<Keys>(jsonString);
+
+            dotKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.dotKey);
+            dashKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.dashKey);
+            Debug.Log($"Key Code is {dotKey} {dashKey}");
         }
         else
         {
-            Debug.LogError("keys.txt not found!");
+            Debug.LogError("keys.json not found!");
         }
+    }
+
+    // Define a class to represent the structure of the JSON file
+    [System.Serializable]
+    private class Keys
+    {
+        public string dotKey;
+        public string dashKey;
+        // Add properties for other keys as needed
     }
 }

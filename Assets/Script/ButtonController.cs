@@ -4,13 +4,16 @@ public class ButtonEffect : MonoBehaviour
 {
     public Sprite buttonUpSprite; // ButtonUp 스프라이트
     public Sprite buttonDownSprite; // ButtonDown 스프라이트
-
+    public KeyCode dotKey;
     private SpriteRenderer spriteRenderer; // 스프라이트 렌더러 컴포넌트
     private bool isTKeyPressed = false; // T 키가 눌렸는지 여부를 나타내는 변수
     private float lastKeyPressTime = 0f; // 마지막으로 T 키가 눌린 시간을 저장하는 변수
 
     void Start()
     {
+        dotKey = KeyManager.dotKey; // dotKey가져오는 부분
+
+        print($"dot key is {dotKey}");
         // 스프라이트 렌더러 컴포넌트 가져오기
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -21,7 +24,7 @@ public class ButtonEffect : MonoBehaviour
     void Update()
     {
         // T 키를 누른 순간
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(dotKey))
         {
             isTKeyPressed = true; // T 키가 눌린 상태로 설정
             lastKeyPressTime = Time.time; // 현재 시간 저장
@@ -29,7 +32,7 @@ public class ButtonEffect : MonoBehaviour
             CheckTKeyState(); // DOT 출력
         }
         // T 키를 누르고 있는 동안
-        else if (Input.GetKey(KeyCode.T))
+        else if (Input.GetKey(dotKey))
         {
             // 마지막으로 T 키가 눌린 후 0.3초 이상이 지났을 때
             if (Time.time - lastKeyPressTime >= 0.3f)
@@ -39,7 +42,7 @@ public class ButtonEffect : MonoBehaviour
             }
         }
         // T 키를 누르지 않은 경우
-        else if (Input.GetKeyUp(KeyCode.T))
+        else if (Input.GetKeyUp(dotKey))
         {
             isTKeyPressed = false; // T 키가 떼진 상태로 설정
             SetButtonState(false); // 버튼 상태 변경
