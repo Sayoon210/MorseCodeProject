@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ButtonSound : MonoBehaviour
+public class ButtonSoundDot : MonoBehaviour
 {
     public AudioClip buttonSound; // 효과음 AudioClip
 

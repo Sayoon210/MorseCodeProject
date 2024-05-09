@@ -21,8 +21,8 @@ public class KeyManager : MonoBehaviour
             // Deserialize JSON using JsonUtility
             Keys keys = JsonUtility.FromJson<Keys>(jsonString);
 
-            dotKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.dotKey);
-            dashKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.dashKey);
+            dotKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.DOTKEY);
+            dashKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.DASHKEY);
             Debug.Log($"Key Code is {dotKey} {dashKey}");
         }
         else
@@ -35,8 +35,8 @@ public class KeyManager : MonoBehaviour
     [System.Serializable]
     private class Keys
     {
-        public string dotKey;
-        public string dashKey;
+        public string DOTKEY;
+        public string DASHKEY;
         // Add properties for other keys as needed
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ButtonEffect : MonoBehaviour
+public class ButtonController : MonoBehaviour
 {
     public Sprite buttonUpSprite; // ButtonUp 스프라이트
     public Sprite buttonDownSprite; // ButtonDown 스프라이트
@@ -60,7 +60,7 @@ public class ButtonEffect : MonoBehaviour
         Debug.Log("DOT"); // DOT 출력
 
         // 효과음 재생
-        ButtonSound buttonSound = GetComponent<ButtonSound>();
+        ButtonSoundDot buttonSound = GetComponent<ButtonSoundDot>();
         if (buttonSound != null)
         {
             buttonSound.PlayButtonSound();

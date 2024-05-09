@@ -2,15 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonEffect2 : MonoBehaviour
+public class ButtonController2 : MonoBehaviour
 {
     public Sprite buttonUpSprite; // ButtonUp 스프라이트
     public Sprite buttonDownSprite; // ButtonDown 스프라이트
-
+    public KeyCode dashKey;
     private SpriteRenderer spriteRenderer; // 스프라이트 렌더러 컴포넌트
+    private bool isTKeyPressed = false; // T 키가 눌렸는지 여부를 나타내는 변수
+    private float lastKeyPressTime = 0f; // 마지막으로 T 키가 눌린 시간을 저장하는 변수
 
     void Start()
     {
+        dashKey = KeyManager.dashKey; // dashKey가져오는 부분
+
+        print($"dash key is {dashKey}");
         // 스프라이트 렌더러 컴포넌트 가져오기
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -20,15 +25,29 @@ public class ButtonEffect2 : MonoBehaviour
 
     void Update()
     {
-        // T 키를 눌렀을 때 버튼의 상태를 변경
-        if (Input.GetKeyDown(KeyCode.Y))
+        // T 키를 누른 순간
+        if (Input.GetKeyDown(dashKey))
         {
-            SetButtonState(true);
+            isTKeyPressed = true; // T 키가 눌린 상태로 설정
+            lastKeyPressTime = Time.time; // 현재 시간 저장
+            SetButtonState(true); // 버튼 상태 변경
+            CheckTKeyState(); // dash 출력
         }
-        // T 키를 뗏을 때 버튼의 상태를 변경
-        else if (Input.GetKeyUp(KeyCode.Y))
+        // T 키를 누르고 있는 동안
+        else if (Input.GetKey(dashKey))
         {
-            SetButtonState(false);
+            // 마지막으로 T 키가 눌린 후 0.3초 이상이 지났을 때
+            if (Time.time - lastKeyPressTime >= 0.3f)
+            {
+                lastKeyPressTime = Time.time; // 현재 시간 저장
+                CheckTKeyState(); // dash 출력
+            }
+        }
+        // T 키를 누르지 않은 경우
+        else if (Input.GetKeyUp(dashKey))
+        {
+            isTKeyPressed = false; // T 키가 떼진 상태로 설정
+            SetButtonState(false); // 버튼 상태 변경
         }
     }
 
@@ -36,5 +55,18 @@ public class ButtonEffect2 : MonoBehaviour
     void SetButtonState(bool isDown)
     {
         spriteRenderer.sprite = isDown ? buttonDownSprite : buttonUpSprite;
+    }
+
+    void CheckTKeyState()
+    {
+        Debug.Log("dash"); // dash 출력
+
+        // 효과음 재생
+        ButtonSoundDash buttonSound = GetComponent<ButtonSoundDash>();
+        if (buttonSound != null)
+        {
+            buttonSound.PlayButtonSound();
+        }
+
     }
 }
