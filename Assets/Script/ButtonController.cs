@@ -57,6 +57,7 @@ public class ButtonController : MonoBehaviour
 
     void CheckTKeyState()
     {
+        
         Debug.Log("DOT"); // DOT 출력
 
         // 효과음 재생

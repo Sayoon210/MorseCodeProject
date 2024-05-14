@@ -1,15 +1,15 @@
 {
     "UxmlGuid": "6d47c88c15c59cd4586addab4eb37f9e",
-    "UxmlPath": "Assets/UI/ToolKitPractice.uxml",
+    "UxmlPath": "Assets/UI/MainScene/ToolKitPractice.uxml",
     "CanvasX": 0,
     "CanvasY": 0,
-    "CanvasWidth": 994,
-    "CanvasHeight": 514,
+    "CanvasWidth": 866,
+    "CanvasHeight": 487,
     "MatchGameView": true,
-    "ZoomScale": 1.0499999523162842,
+    "ZoomScale": 0.6499999761581421,
     "PanOffset": {
-        "x": 111.44815826416016,
-        "y": 175.60440063476563
+        "x": 324.19732666015627,
+        "y": 165.98526000976563
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,
