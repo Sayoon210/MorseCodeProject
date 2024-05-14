@@ -17,13 +17,13 @@
                     {
                         "m_StyleSheet": {
                             "fileID": 7433441132597879392,
-                            "guid": "3882fa69a99df6643a3ea24a879c80f7",
+                            "guid": "2e94f17a54c62774ab616ddf906e8dd1",
                             "type": 3
                         },
                         "m_BackupStyleSheet": {
                             "instanceID": 0
                         },
-                        "m_OldPath": "Assets/UI/MainScene/UIUSS.uss"
+                        "m_OldPath": "Assets/UI/MainScene/MainSceneUss.uss"
                     }
                 ],
                 "m_OpenendVisualTreeAssetOldPath": "Assets/UI/MainScene/ToolKitPractice.uxml",
@@ -34,7 +34,7 @@
                 },
                 "m_ActiveStyleSheet": {
                     "fileID": 7433441132597879392,
-                    "guid": "3882fa69a99df6643a3ea24a879c80f7",
+                    "guid": "2e94f17a54c62774ab616ddf906e8dd1",
                     "type": 3
                 },
                 "m_Settings": {
@@ -42,8 +42,8 @@
                     "UxmlPath": "Assets/UI/MainScene/ToolKitPractice.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 866,
-                    "CanvasHeight": 487,
+                    "CanvasWidth": 852,
+                    "CanvasHeight": 479,
                     "MatchGameView": true,
                     "ZoomScale": 0.6499999761581421,
                     "PanOffset": {
