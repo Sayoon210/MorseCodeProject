@@ -10,7 +10,6 @@ public class MorseSfxController : MonoBehaviour
     public float normalSpacing = 0.5f; // 스프라이트 간 공백
     public float largeSpacing = 2f; // 큰 공백
     public float inputCooldown = 3f; // 입력 간격 시간
-
     private float lastInputTime = 0f; // 마지막 입력 시간
     private List<GameObject> spawnedObjects = new List<GameObject>(); // 생성된 스프라이트 리스트
 
@@ -32,7 +31,7 @@ public class MorseSfxController : MonoBehaviour
         if (Input.GetKeyDown(dotKey))
         {
             AddSprite(dotPrefab);
-            largeSpacingOk = true;
+            largeSpacingOk = true;        
         }
         // DASH 키 입력 처리
         else if (Input.GetKeyDown(dashKey))
@@ -40,6 +39,20 @@ public class MorseSfxController : MonoBehaviour
             AddSprite(dashPrefab);
             largeSpacingOk = true;
         }
+        else if (Time.time - lastInputTime >= 0.3f)
+        {
+            if(Input.GetKey(dotKey))
+            {
+            AddSprite(dotPrefab);
+            largeSpacingOk = true; // DOT 출력
+            }
+            else if(Input.GetKey(dashKey))
+            {
+            AddSprite(dashPrefab);
+            largeSpacingOk = true; // DOT 출력
+            }
+        }
+        
 
         // 일정 시간 입력이 없으면 큰 공백 추가
         if (Time.time - lastInputTime >= inputCooldown && spawnedObjects.Count > 0 && largeSpacingOk)
@@ -57,8 +70,9 @@ public class MorseSfxController : MonoBehaviour
     {
         // 마지막 입력 시간 갱신
         lastInputTime = Time.time;
+
         if(spawnedObjects.Count >= 1) {
-            // 기존 스프라이트들 왼쪽으로 이동
+            
             float spriteWidth1 = GetSpriteWidth(spawnedObjects[spawnedObjects.Count - 1]);
             float spriteWidth2 = GetSpriteWidth(prefab);
             Debug.Log($"width is {spriteWidth1} {spriteWidth2}");
@@ -66,7 +80,7 @@ public class MorseSfxController : MonoBehaviour
         }
         // 새로운 스프라이트 생성
         GameObject newSprite = Instantiate(prefab, transform);
-        newSprite.transform.position = new Vector3(17.5f, -6.5f, 0); // 지정된 위치에 생성
+        newSprite.transform.position = new Vector3(18f, -6.5f, 0); // 지정된 위치에 생성
         spawnedObjects.Add(newSprite);
     }
 
