@@ -15,7 +15,7 @@ public class ButtonController2 : MonoBehaviour
     {
         dashKey = KeyManager.dashKey; // dashKey가져오는 부분
 
-        print($"dash key is {dashKey}");
+        //print($"dash key is {dashKey}");
         // 스프라이트 렌더러 컴포넌트 가져오기
         spriteRenderer = GetComponent<SpriteRenderer>();
 

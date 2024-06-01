@@ -57,7 +57,7 @@ public class MorseSfxController : MonoBehaviour
         // 일정 시간 입력이 없으면 큰 공백 추가
         if (Time.time - lastInputTime >= inputCooldown && spawnedObjects.Count > 0 && largeSpacingOk)
         {
-            //AddLargeSpacing();
+            AddLargeSpacing();
             lastInputTime = Time.time;
             largeSpacingOk = false;
         }
@@ -75,7 +75,7 @@ public class MorseSfxController : MonoBehaviour
             
             float spriteWidth1 = GetSpriteWidth(spawnedObjects[spawnedObjects.Count - 1]);
             float spriteWidth2 = GetSpriteWidth(prefab);
-            Debug.Log($"width is {spriteWidth1} {spriteWidth2}");
+            // Debug.Log($"width is {spriteWidth1} {spriteWidth2}");
             MoveSprites(spriteWidth1/2 + spriteWidth2/2 + normalSpacing);
         }
         // 새로운 스프라이트 생성

@@ -386,8 +386,10 @@
 "Assets/Script/ButtonSoundDash.cs"
 "Assets/Script/ButtonSoundDot.cs"
 "Assets/Script/KeyManager.cs"
-"Assets/Script/MainUIController.cs"
+"Assets/Script/MainMenuController.cs"
 "Assets/Script/MorseSfxController.cs"
+"Assets/Script/Puzzle2Manager.cs"
+"Assets/Script/PuzzleMenuController.cs"
 "Assets/Script/StartUIController.cs"
 "Assets/Script/TextColorController.cs"
 -langversion:9.0
