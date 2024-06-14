@@ -15,7 +15,7 @@ public class KeyManager : MonoBehaviour
 
     void LoadKeys()
     {
-        string path = "Assets/Script/keys.json";
+        string path = Path.Combine(Application.streamingAssetsPath, "keys.json");
         if (File.Exists(path))
         {
             string jsonString = File.ReadAllText(path);
@@ -35,7 +35,7 @@ public class KeyManager : MonoBehaviour
 
             dotKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.DOTKEY);
             dashKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keys.DASHKEY);
-            //Debug.Log($"Key Code is {dotKey} {dashKey}");
+            Debug.Log($"Key Code is {dotKey} {dashKey}");
         }
         else
         {

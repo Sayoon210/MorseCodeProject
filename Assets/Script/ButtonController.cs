@@ -13,7 +13,7 @@ public class ButtonController : MonoBehaviour
     {
         dotKey = KeyManager.dotKey; // dotKey가져오는 부분
 
-        print($"dot key is {dotKey}");
+        //print($"dot key is {dotKey}");
         // 스프라이트 렌더러 컴포넌트 가져오기
         spriteRenderer = GetComponent<SpriteRenderer>();
 

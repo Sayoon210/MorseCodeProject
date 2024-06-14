@@ -48,7 +48,7 @@ public class MainMenuController : MonoBehaviour
 
     private void ExitGame(ClickEvent evt) 
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 

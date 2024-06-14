@@ -66,6 +66,16 @@ public class MorseSfxController : MonoBehaviour
         
     }
 
+    float GetPrefabSpriteWidth(GameObject prefab)
+{
+    SpriteRenderer spriteRenderer = prefab.GetComponent<SpriteRenderer>();
+    if (spriteRenderer != null)
+    {
+        // Sprite의 bounds를 통해 width를 구합니다.
+        return spriteRenderer.sprite.bounds.size.x * prefab.transform.localScale.x;
+    }
+    return 0f;
+}
     private void AddSprite(GameObject prefab)
     {
         // 마지막 입력 시간 갱신
@@ -74,8 +84,8 @@ public class MorseSfxController : MonoBehaviour
         if(spawnedObjects.Count >= 1) {
             
             float spriteWidth1 = GetSpriteWidth(spawnedObjects[spawnedObjects.Count - 1]);
-            float spriteWidth2 = GetSpriteWidth(prefab);
-            // Debug.Log($"width is {spriteWidth1} {spriteWidth2}");
+            float spriteWidth2 = GetPrefabSpriteWidth(prefab);
+            Debug.Log($"width is {spriteWidth1} {spriteWidth2}");
             MoveSprites(spriteWidth1/2 + spriteWidth2/2 + normalSpacing);
         }
         // 새로운 스프라이트 생성
