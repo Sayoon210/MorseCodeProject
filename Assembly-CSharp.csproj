@@ -64,13 +64,16 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.24f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\ButtonSoundDashNetwork.cs" />
     <Compile Include="Assets\Script\PuzzleMenuController.cs" />
     <Compile Include="Assets\Script\MainMenuController.cs" />
     <Compile Include="Assets\Script\ButtonController.cs" />
+    <Compile Include="Assets\Script\ButtonSoundDotNetwork.cs" />
     <Compile Include="Assets\Script\BackButtonController.cs" />
     <Compile Include="Assets\Script\Puzzle2Manager.cs" />
     <Compile Include="Assets\Script\MorseSfxController.cs" />
     <Compile Include="Assets\Script\ButtonSoundDash.cs" />
+    <Compile Include="Assets\Script\MorseSfxControllerNetwork.cs" />
     <Compile Include="Assets\Script\KeyManager.cs" />
     <Compile Include="Assets\Script\ButtonSoundDot.cs" />
     <Compile Include="Assets\Script\TextColorController.cs" />

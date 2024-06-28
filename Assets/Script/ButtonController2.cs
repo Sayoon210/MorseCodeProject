@@ -62,7 +62,7 @@ public class ButtonController2 : MonoBehaviour
         Debug.Log("dash"); // dash 출력
 
         // 효과음 재생
-        ButtonSoundDash buttonSound = GetComponent<ButtonSoundDash>();
+        ButtonSoundDashNetwork buttonSound = GetComponent<ButtonSoundDashNetwork>();
         if (buttonSound != null)
         {
             buttonSound.PlayButtonSound();

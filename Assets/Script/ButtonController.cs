@@ -61,7 +61,7 @@ public class ButtonController : MonoBehaviour
         Debug.Log("DOT"); // DOT 출력
 
         // 효과음 재생
-        ButtonSoundDot buttonSound = GetComponent<ButtonSoundDot>();
+        ButtonSoundDotNetwork buttonSound = GetComponent<ButtonSoundDotNetwork>();
         if (buttonSound != null)
         {
             buttonSound.PlayButtonSound();

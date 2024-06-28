@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1074250763314291392}
   - component: {fileID: 8173938649852339844}
   - component: {fileID: 4819279778287055762}
+  - component: {fileID: 3232818045902691655}
   m_Layer: 0
   m_Name: Button_2
   m_TagString: Untagged
@@ -210,7 +211,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2712141554529696033}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74c22e366829bf24ea4e13dfd1b90fc5, type: 3}
   m_Name: 
@@ -228,6 +229,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2606a2472a1e40e4bbd53af8496d817a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3232818045902691655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2712141554529696033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e97e8d0c250f347b071bd7fb5c5a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: 17b31fc19bd55f34d891d18c2a39ec85, type: 3}
 --- !u!1 &3531987716919615961
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +404,7 @@ GameObject:
   - component: {fileID: 1106990871208653382}
   - component: {fileID: 8430624285324709211}
   - component: {fileID: 2929628141199002068}
+  - component: {fileID: 2336643007632665197}
   m_Layer: 0
   m_Name: MorseSFX
   m_TagString: Untagged
@@ -434,6 +449,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30b2f97c84421f849a8e9756a4391071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  largeSpacingOk: 0
+  dotPrefab: {fileID: 4616409135935156138}
+  dashPrefab: {fileID: 1345776774095500342}
+  normalSpacing: 0.3
+  largeSpacing: 0.5
+  inputCooldown: 0.3
+  dotKey: 0
+  dashKey: 0
+--- !u!114 &2336643007632665197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190663455699758740}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4214a5fd2e2670f49a65ca510d35f0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   largeSpacingOk: 0
@@ -496,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2960030118
+  GlobalObjectIdHash: 2540369596
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -531,6 +566,7 @@ GameObject:
   - component: {fileID: 6124119122050125539}
   - component: {fileID: 2988573062749175380}
   - component: {fileID: 8311437521215368829}
+  - component: {fileID: 1173045979220592925}
   m_Layer: 0
   m_Name: Button_1
   m_TagString: Untagged
@@ -712,7 +748,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8249181795586606933}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d26ce6a752f4c6646a34030dd2346521, type: 3}
   m_Name: 
@@ -745,6 +781,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2606a2472a1e40e4bbd53af8496d817a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1173045979220592925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8249181795586606933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd52503fa5b39e2459de6c50b41e6907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: dc209afe1bf528f43bd06f32ab11bf20, type: 3}
 --- !u!1 &9061360593200627909
 GameObject:
   m_ObjectHideFlags: 0

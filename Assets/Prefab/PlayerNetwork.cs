@@ -16,7 +16,7 @@ public class PlayerNetwork : NetworkBehaviour
     // Update is called once per frame
     private void Update()
     {   
-                if (!IsOwner) return;
+        if (!IsOwner) return;
         if (Input.GetKeyDown(KeyCode.Y)) {
             randomNumber.Value = Random.Range(0,100);
         }
