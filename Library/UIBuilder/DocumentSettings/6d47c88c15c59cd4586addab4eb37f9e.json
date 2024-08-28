@@ -3,13 +3,13 @@
     "UxmlPath": "Assets/UI/MainScene/ToolKitPractice.uxml",
     "CanvasX": 0,
     "CanvasY": 0,
-    "CanvasWidth": 862,
-    "CanvasHeight": 485,
+    "CanvasWidth": 880,
+    "CanvasHeight": 495,
     "MatchGameView": true,
-    "ZoomScale": 0.6499999761581421,
+    "ZoomScale": 1.0,
     "PanOffset": {
-        "x": 324.19732666015627,
-        "y": 165.98526000976563
+        "x": 23.0,
+        "y": 37.5
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

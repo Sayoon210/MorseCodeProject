@@ -25,9 +25,9 @@ public class PuzzleMenuController : MonoBehaviour
         _Puzzle3 = root.Q<Button>("Puzzle3");
         _Back = root.Q<Button>("Back");
 
-        //_Puzzle1.RegisterCallback<ClickEvent>(PuzzleChanger1);
+        _Puzzle1.RegisterCallback<ClickEvent>(PuzzleChanger1);
         _Puzzle2.RegisterCallback<ClickEvent>(PuzzleChanger2);
-        //_Puzzle3.RegisterCallback<ClickEvent>(PuzzleChanger3);
+        _Puzzle3.RegisterCallback<ClickEvent>(PuzzleChanger3);
         _Back.RegisterCallback<ClickEvent>(Back);
     
     }

@@ -1,5 +1,7 @@
 {
   "DOTKEY": "T",
   "DASHKEY": "Y",
-  "PUZZLE_2": ["t", "t", "t", "y", "y", "y", "t", "t", "t"]
+  "PUZZLE_1": "HELLO",
+  "PUZZLE_2": ["t", "t", "t", "y", "y", "y", "t", "t", "t"],
+  "PUZZLE_3": "SOS"
 }

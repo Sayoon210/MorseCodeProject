@@ -457,7 +457,11 @@
 "Assets/Script/MainMenuController.cs"
 "Assets/Script/MorseSfxController.cs"
 "Assets/Script/MorseSfxControllerNetwork.cs"
+"Assets/Script/NetButtonController.cs"
+"Assets/Script/NetButtonController2.cs"
+"Assets/Script/Puzzle1Manager.cs"
 "Assets/Script/Puzzle2Manager.cs"
+"Assets/Script/Puzzle3Manager.cs"
 "Assets/Script/PuzzleMenuController.cs"
 "Assets/Script/TextColorController.cs"
 -langversion:9.0

@@ -26,35 +26,33 @@
                         "m_OldPath": "Assets/UI/MainScene/MainMenuUss.uss"
                     }
                 ],
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/MainScene/PuzzleMenu.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/MainScene/MainMenu.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "4facdc8e85396e9439e4ede74b2a24fe",
+                    "guid": "6d47c88c15c59cd4586addab4eb37f9e",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "fileID": 7433441132597879392,
-                    "guid": "2e94f17a54c62774ab616ddf906e8dd1",
-                    "type": 3
+                    "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "4facdc8e85396e9439e4ede74b2a24fe",
-                    "UxmlPath": "Assets/UI/MainScene/PuzzleMenu.uxml",
+                    "UxmlGuid": "6d47c88c15c59cd4586addab4eb37f9e",
+                    "UxmlPath": "Assets/UI/MainScene/ToolKitPractice.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 862,
-                    "CanvasHeight": 485,
+                    "CanvasWidth": 880,
+                    "CanvasHeight": 495,
                     "MatchGameView": true,
                     "ZoomScale": 1.0,
                     "PanOffset": {
-                        "x": 207.5,
-                        "y": 228.0
+                        "x": 23.0,
+                        "y": 37.5
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": false,
-                    "CanvasBackgroundMode": 0,
+                    "EnableCanvasBackground": true,
+                    "CanvasBackgroundMode": 2,
                     "CanvasBackgroundColor": {
                         "r": 0.0,
                         "g": 0.0,
@@ -65,7 +63,7 @@
                         "instanceID": 0
                     },
                     "CanvasBackgroundImageScaleMode": 1,
-                    "CanvasBackgroundCameraName": ""
+                    "CanvasBackgroundCameraName": "Main Camera"
                 },
                 "m_OpenSubDocumentParentIndex": -1,
                 "m_OpenSubDocumentParentSourceTemplateAssetIndex": -1

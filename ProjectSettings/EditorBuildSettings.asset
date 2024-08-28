@@ -5,18 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 638def67718386340ae8543d1ece7547
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: ddb04dd17accfc64ab8ac9ad41292b74
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PuzzleMenuScene.unity
     guid: cf69e156270ad8b4cb67ff2d9c6514d1
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Puzzle1.unity
+    guid: 49a5e4f232e72014faedc9c8293d497b
+  - enabled: 1
     path: Assets/Scenes/Puzzle2.unity
     guid: 2a99fecb7f230b642acd098ba12936e9
+  - enabled: 1
+    path: Assets/Scenes/Puzzle3.unity
+    guid: 38a3aba460c290b4aafe60475ed56e3d
   - enabled: 1
     path: Assets/Scenes/MultiplayScene.unity
     guid: 30861cc94c9fd30429c39fd762f8d064

@@ -6,7 +6,7 @@ public class ButtonController : MonoBehaviour
     public Sprite buttonDownSprite; // ButtonDown 스프라이트
     public KeyCode dotKey;
     private SpriteRenderer spriteRenderer; // 스프라이트 렌더러 컴포넌트
-    private bool isTKeyPressed = false; // T 키가 눌렸는지 여부를 나타내는 변수
+    private bool isKeyPressed = false; // T 키가 눌렸는지 여부를 나타내는 변수
     private float lastKeyPressTime = 0f; // 마지막으로 T 키가 눌린 시간을 저장하는 변수
 
     void Start()
@@ -26,7 +26,7 @@ public class ButtonController : MonoBehaviour
         // T 키를 누른 순간
         if (Input.GetKeyDown(dotKey))
         {
-            isTKeyPressed = true; // T 키가 눌린 상태로 설정
+            isKeyPressed = true; // T 키가 눌린 상태로 설정
             lastKeyPressTime = Time.time; // 현재 시간 저장
             SetButtonState(true); // 버튼 상태 변경
             CheckTKeyState(); // DOT 출력
@@ -44,7 +44,7 @@ public class ButtonController : MonoBehaviour
         // T 키를 누르지 않은 경우
         else if (Input.GetKeyUp(dotKey))
         {
-            isTKeyPressed = false; // T 키가 떼진 상태로 설정
+            isKeyPressed = false; // T 키가 떼진 상태로 설정
             SetButtonState(false); // 버튼 상태 변경
         }
     }
@@ -61,7 +61,7 @@ public class ButtonController : MonoBehaviour
         Debug.Log("DOT"); // DOT 출력
 
         // 효과음 재생
-        ButtonSoundDotNetwork buttonSound = GetComponent<ButtonSoundDotNetwork>();
+        ButtonSoundDot buttonSound = GetComponent<ButtonSoundDot>();
         if (buttonSound != null)
         {
             buttonSound.PlayButtonSound();

@@ -66,18 +66,22 @@
   <ItemGroup>
     <Compile Include="Assets\Script\ButtonSoundDashNetwork.cs" />
     <Compile Include="Assets\Script\PuzzleMenuController.cs" />
+    <Compile Include="Assets\Script\Puzzle1Manager.cs" />
     <Compile Include="Assets\Script\MainMenuController.cs" />
     <Compile Include="Assets\Script\ButtonController.cs" />
     <Compile Include="Assets\Script\ButtonSoundDotNetwork.cs" />
     <Compile Include="Assets\Script\BackButtonController.cs" />
+    <Compile Include="Assets\Script\NetButtonController2.cs" />
     <Compile Include="Assets\Script\Puzzle2Manager.cs" />
     <Compile Include="Assets\Script\MorseSfxController.cs" />
     <Compile Include="Assets\Script\ButtonSoundDash.cs" />
     <Compile Include="Assets\Script\MorseSfxControllerNetwork.cs" />
     <Compile Include="Assets\Script\KeyManager.cs" />
+    <Compile Include="Assets\Script\Puzzle3Manager.cs" />
     <Compile Include="Assets\Script\ButtonSoundDot.cs" />
     <Compile Include="Assets\Script\TextColorController.cs" />
     <Compile Include="Assets\NetworkManager\NetworkManagerUI.cs" />
+    <Compile Include="Assets\Script\NetButtonController.cs" />
     <Compile Include="Assets\Prefab\PlayerNetwork.cs" />
     <Compile Include="Assets\Script\ButtonController2.cs" />
   </ItemGroup>

@@ -133,6 +133,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 54321573856891149}
+        m_TargetAssemblyTypeName: BackButtonControl, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &54321573856891149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74d60336ce6e6b4098b85f9ec12290c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: 2da2d678cb215c74fab17ee744c1af8b, type: 3}
 --- !u!1 &853464635784173661
 GameObject:
   m_ObjectHideFlags: 0

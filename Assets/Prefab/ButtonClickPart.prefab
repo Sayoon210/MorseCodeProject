@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 6951385430353183884}
   - component: {fileID: 4010625333834900952}
   - component: {fileID: 5508687008985290691}
-  - component: {fileID: 1074250763314291392}
-  - component: {fileID: 8173938649852339844}
-  - component: {fileID: 4819279778287055762}
+  - component: {fileID: 5391229144125010003}
   - component: {fileID: 3232818045902691655}
+  - component: {fileID: 4819279778287055762}
   m_Layer: 0
   m_Name: Button_2
   m_TagString: Untagged
@@ -189,7 +188,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1074250763314291392
+--- !u!114 &5391229144125010003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,22 +197,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2712141554529696033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 325ce5433661c7e4a861ff4e1f570404, type: 3}
+  m_Script: {fileID: 11500000, guid: cd0a0b53c9eb8bb4298a4e51dd6ea7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonUpSprite: {fileID: -1511743651, guid: 06c2efef08618e9468b538a8c50fd3dc, type: 3}
   buttonDownSprite: {fileID: 807801356, guid: 06c2efef08618e9468b538a8c50fd3dc, type: 3}
   dashKey: 0
---- !u!114 &8173938649852339844
+--- !u!114 &3232818045902691655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2712141554529696033}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c22e366829bf24ea4e13dfd1b90fc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 58e97e8d0c250f347b071bd7fb5c5a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 8300000, guid: 17b31fc19bd55f34d891d18c2a39ec85, type: 3}
@@ -229,19 +228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2606a2472a1e40e4bbd53af8496d817a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3232818045902691655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2712141554529696033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e97e8d0c250f347b071bd7fb5c5a7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonSound: {fileID: 8300000, guid: 17b31fc19bd55f34d891d18c2a39ec85, type: 3}
 --- !u!1 &3531987716919615961
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2540369596
+  GlobalObjectIdHash: 2960030118
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -563,10 +549,9 @@ GameObject:
   - component: {fileID: 7732405916779227284}
   - component: {fileID: 4415633529507903006}
   - component: {fileID: 4896156671793345007}
-  - component: {fileID: 6124119122050125539}
-  - component: {fileID: 2988573062749175380}
-  - component: {fileID: 8311437521215368829}
+  - component: {fileID: 2919857266583299800}
   - component: {fileID: 1173045979220592925}
+  - component: {fileID: 8311437521215368829}
   m_Layer: 0
   m_Name: Button_1
   m_TagString: Untagged
@@ -741,20 +726,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6124119122050125539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8249181795586606933}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d26ce6a752f4c6646a34030dd2346521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonSound: {fileID: 8300000, guid: dc209afe1bf528f43bd06f32ab11bf20, type: 3}
---- !u!114 &2988573062749175380
+--- !u!114 &2919857266583299800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -763,24 +735,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8249181795586606933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51917a25c98ab844795e04eafe6fb3ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a580df0d7315ea4a99dd77f4d7e770f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonUpSprite: {fileID: -1511743651, guid: 06c2efef08618e9468b538a8c50fd3dc, type: 3}
   buttonDownSprite: {fileID: 807801356, guid: 06c2efef08618e9468b538a8c50fd3dc, type: 3}
   dotKey: 0
---- !u!114 &8311437521215368829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8249181795586606933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2606a2472a1e40e4bbd53af8496d817a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1173045979220592925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +754,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 8300000, guid: dc209afe1bf528f43bd06f32ab11bf20, type: 3}
+--- !u!114 &8311437521215368829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8249181795586606933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2606a2472a1e40e4bbd53af8496d817a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9061360593200627909
 GameObject:
   m_ObjectHideFlags: 0

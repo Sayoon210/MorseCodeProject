@@ -12,7 +12,7 @@ public class MainMenuController : MonoBehaviour
     private VisualElement _buttonContainer;
     private Button _buttonStart;
     private Button _buttonPuzzle;
-    // private Button _buttonMultiplay;
+    private Button _buttonMultiplay;
     private Button _buttonExit;
 
 
@@ -20,15 +20,17 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
+
         _buttonContainer = root.Q<VisualElement>("ButtonContainer");
         _buttonStart = root.Q<Button>("StartButton");
         _buttonPuzzle = root.Q<Button>("PuzzleButton");
+        _buttonMultiplay = root.Q<Button>("MultiButton");
         _buttonExit = root.Q<Button>("ExitButton");
 
         _buttonStart.RegisterCallback<ClickEvent>(StartSceneChanger);
         _buttonPuzzle.RegisterCallback<ClickEvent>(PuzzleSceneChanger);
+        _buttonMultiplay.RegisterCallback<ClickEvent>(MultiSceneChanger);
         _buttonExit.RegisterCallback<ClickEvent>(ExitGame);
-    
     }
 
     public void LoadSpecificScene(string sceneName)
@@ -36,17 +38,22 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    private void StartSceneChanger(ClickEvent evt) 
+    private void StartSceneChanger(ClickEvent evt)
     {
         LoadSpecificScene("StartScene");
     }
 
-    private void PuzzleSceneChanger(ClickEvent evt) 
+    private void MultiSceneChanger(ClickEvent evt)
+    {
+        LoadSpecificScene("MultiplayScene");
+    }
+
+    private void PuzzleSceneChanger(ClickEvent evt)
     {
         LoadSpecificScene("PuzzleMenuScene");
     }
 
-    private void ExitGame(ClickEvent evt) 
+    private void ExitGame(ClickEvent evt)
     {
         //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
