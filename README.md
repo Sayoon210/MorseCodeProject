@@ -4,10 +4,10 @@
 http://naver.me/5T4iQYH0
 
 ### >_조작법 개요
-DotKey = 'T'
-DashKey = 'Y'
-빌드 폴더 내의 MorseSimulator_Data\StreamingAssets 경로에서 'keys.json'이라는 파일을 수정하여 키보드 키 수정 가능
-(유의: 퍼즐 정답이 해당 json파일 내에 포함되어 있으니 주의 바람.)
+DotKey = 'T' 
+DashKey = 'Y' 
+빌드 폴더 내의 MorseSimulator_Data\StreamingAssets 경로에서 'keys.json'이라는 파일을 수정하여 키보드 키 수정 가능 
+(유의: 퍼즐 정답이 해당 json파일 내에 포함되어 있으니 주의 바람.) 
 
 ### >_프로젝트 개요
 
