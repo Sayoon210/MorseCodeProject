@@ -1,5 +1,7 @@
 ## Morse Code Simulator
 
+스크립트는 Asset\Script 경로에 저장함.
+
 ### >_다운로드 링크
 http://naver.me/5T4iQYH0
 
